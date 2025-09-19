@@ -1,3 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 h1{
     border-style: solid red 1px;
+}
+
+header{
+    display: flex;
+    background-color: grey;
+    align-items: center; /*este centra en eje vertical (y) tambien solo para flex*/
+    justify-content: center; /*justify content:center centra en eje (x). solo para display flex*/
+}
+
+.container-logo{
+    border-radius: 20%;
+    border: solid black 2px;
+    position: relative;
+}
+
+.container-equipo{
+    border: solid red 1px;
+    margin-bottom: 5px;
+}
+
+.lista-equipos{
+    display: flex;
+    
+    justify-content: center;
+    flex-wrap: wrap;
 }
