@@ -9,6 +9,16 @@ h1 {
     border-style: solid red 1px;
 }
 
+.titulo-equipos {
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
 h2 {
     color: white;
     font-family: "Audiowide", sans-serif;
@@ -19,6 +29,8 @@ h2 {
 
 header {
     display: flex;
+    height: 90px;
+    margin-bottom: 20px;
 
     /*Prueben con estos colores degradados si les gusta alguno*/
     /*background-color: grey;
@@ -36,8 +48,8 @@ header {
     background: radial-gradient(circle, #710e10 0%, #131335 100%);*/
 
     background: #131335;
-    background: -webkit-radial-gradient(circle, #131335 0%, #710e10 100%);
-    background: radial-gradient(circle, #131335 0%, #710e10 100%);
+    background: -webkit-radial-gradient(circle, #0d0d1a 0%, #710e10 50%);
+    background: radial-gradient(circle, #0d0d1a 0%, #710e10 180%);
 
     align-items: center;
     /*este centra en eje vertical (y) tambien solo para flex*/
@@ -45,18 +57,66 @@ header {
     /*justify content:center centra en eje (x). solo para display flex*/
 }
 
-.logo-formula {
-    transform: scale(0.6);
 
+.logo-formula {
+    transform: scale(0.3);
+    padding: 0px;
+
+}
+
+
+.logo-equipo-perfil {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35%;
+  /*margin-top: 100px; */
+}
+
+#logo-equipo {
+    max-height: 100%;
+    max-width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.fondo-color{
+    display: flex;
+    height: 150px;
+    margin-top: 150px;
+    background: radial-gradient(circle, #0d0d1a 50%, #710e10 180%);
+    align-items: center;
+}
+
+#nombre-equipo{
+    display: flex; 
+    justify-content: center;
+    font-size: 35px;
+}
+
+
+.contenedor-nombre-equipo {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px;
+}
+
+
+.historia-equipo {
+  text-align: left;
+  margin-top: 20px;
+  max-width: 600px;  
 }
 
 body {
-    background-color: #131335;
+    background-color: #0d0d1a;
 }
 
+
 .container-logo {
-    border-radius: 20%;
-    border: solid black 2px;
+    border-radius: 10%;
+    border: solid black 1px;
 }
 
 .card-equipo {
@@ -90,6 +150,16 @@ body {
     border: solid 2px white;
 }
 
+#flecha {
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-top: 30px;
+    opacity: 60%;
+    animation: bounce 1s infinite; 
+}
 
 .auto-equipo {
     width: 100%;
@@ -110,3 +180,23 @@ body {
     flex-wrap: wrap;
     list-style-type: none;
 }
+
+.barra-tareas {
+  display: flex;                  /* coloca los elementos en una fila */
+  justify-content: center;        /* centra horizontalmente */         
+  height: 20px;                   /* altura de la barra */
+  width: 800px;
+  margin: auto;
+  gap: 60px;                      /* separación entre los títulos */
+  top: 1000px;                   /* posición desde la parte superior */
+  color: white;
+  font-family: "Audiowide", sans-serif;
+  padding-bottom: 12px;
+  border-bottom: solid rgb(50, 50, 50) 1px;
+}
+
+/*#logo-equipo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}*/
