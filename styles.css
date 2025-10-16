@@ -174,7 +174,7 @@ body {
 
 
 
-.lista-equipos {
+#lista-equipos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -193,6 +193,12 @@ body {
   font-family: "Audiowide", sans-serif;
   padding-bottom: 12px;
   border-bottom: solid rgb(50, 50, 50) 1px;
+}
+.barra-tareas a {
+    text-decoration: none;        /* elimina el subrayado de los enlaces */
+    color: white;                 /* color del texto */
+    font-size: 14px;              /* tamaño de la fuente */
+    font-weight: bold;            /* negrita */
 }
 
 /*#logo-equipo {

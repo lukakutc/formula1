@@ -12,53 +12,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-	<script src="equiposPerfil.js"></script>
 </head>
 
-<body>
+<body class="pagina-perfilEscuderia">
     <div class="fondo-logo">
         <header>
             <div id="container-logo">
-                <a href = "equipos.html"> <img class="logo-formula" src="assets/img/LOGO.png" alt="logo formula 1"> </a>
+                <a href="equipos.html"> <img class="logo-formula" src="assets/img/LOGO.png" alt="logo formula 1"> </a>
             </div>
         </header>
-        <div class = "barra-tareas">
-            <h4>INICIO</h4><h4>EQUIPOS</h4><h4>PILOTOS</h4><h4>PISTAS</h4><h4>NOTICIAS</h4><h4>HISTORIA</h4>
+        <div class="barra-tareas">
+            <a href="equipos.html">INICIO</a><a href="equipos.html">EQUIPOS</a><a href="#">PILOTOS</a><a
+                href="#">PISTAS</a><a href="#">NOTICIAS</a><a href="#">HISTORIA</a>
         </div>
-    <div>
-        <div class = "fondo-color">
-            <div class = "logo-equipo-perfil">
-			    <img id="logo-equipo" src="" alt="logo equipo">
+        <div>
+            <div class="fondo-color">
+                <div class="logo-equipo-perfil">
+                    <img id="logo-equipo" src="" alt="logo equipo">
+                </div>
+            </div>
+            <div class="contenedor-nombre-equipo">
+                <h2 id="nombre-equipo"></h2>
             </div>
         </div>
-			<div class = "contenedor-nombre-equipo">
-				<h2 id="nombre-equipo"></h2>
-		    </div>
-    </div>
 
-    <div>
-        <img id = "flecha" src = "assets/img/iconos/flecha.png" alt = "flecha abajo">
-    </div>
-    <div>
-        <h1 class = "titulo-equipos">ESTADISTICAS</h1>
-    </div>
-	<script>
-   
-    const params = new URLSearchParams(window.location.search);
-    const teamId = params.get("team");
-    const equipo = equipos[teamId];
-    const fondo = document.querySelector(".fondo-color");
+        <div>
+            <img id="flecha" src="assets/img/iconos/flecha.png" alt="flecha abajo">
+        </div>
+        <div>
+            <h1 class="titulo-equipos">ESTADISTICAS</h1>
+        </div>
 
-    
-    if (equipo) {
-      document.getElementById("logo-equipo").src = equipo.logo;
-      document.getElementById("nombre-equipo").alt = equipo.nombre;
-      document.getElementById("nombre-equipo").textContent = equipo.nombre;
-       /* document.getElementById("historia-equipo").textContent = equipo.historia; esto lo saqué pq me daba problema a la carga que venía después*/
-      fondo.style.background = equipo.colorFondo;
-    } else {
-      document.getElementById("logo-equipo-perfil").innerHTML = "<p>Equipo no encontrado</p>";
-    }
-    </script>
-</body>		
+        <script src="datos.js"></script>
+</body>
+
 </html>
