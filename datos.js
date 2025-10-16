@@ -150,7 +150,7 @@ function cargarPerfil() {
     let  i = 0;
     let  encontrado = false;
     let equipo;
-    while(arrayEquipos.length<i && !encontrado){
+    while(arrayEquipos.length>i && !encontrado){
         if(arrayEquipos[i].id==teamId){
             encontrado = true;
             equipo = arrayEquipos[i];
@@ -159,6 +159,7 @@ function cargarPerfil() {
         }
     }
     console.log("sale del bucle")
+    console.log("iterador: "+i);
     console.log("encontrado "+encontrado);
     console.log(arrayEquipos[i]);
     const fondo = document.querySelector(".fondo-color");
