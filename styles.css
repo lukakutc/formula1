@@ -66,17 +66,17 @@ header {
 
 
 .logo-equipo-perfil {
-  width: 400px;
+  width: 100%;
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 35%;
+  /*margin-left: 35%;*/
   /*margin-top: 100px; */
 }
 
 #logo-equipo {
-    max-height: 100%;
-    max-width: 100%;
+    width: 400px;
     height: 300px;
     object-fit: contain;
 }
@@ -99,7 +99,9 @@ header {
 .contenedor-nombre-equipo {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 125px;
+  width:100%;
 }
 
 
