@@ -1,8 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    
-    
 }
 
 h1 {
@@ -31,21 +29,6 @@ header {
     display: flex;
     height: 90px;
     margin-bottom: 20px;
-
-    /*Prueben con estos colores degradados si les gusta alguno*/
-    /*background-color: grey;
-
-    background: #131335;
-    background: -webkit-linear-gradient(0deg, #131335 0%, #710e10 100%);
-    background: linear-gradient(0deg, #131335 0%, #710e10 100%);
-
-    background: #710e10;
-    background: -webkit-linear-gradient(0deg, #710e10 0%, #131335 100%);
-    background: linear-gradient(0deg, #710e10 0%, #131335 100%);
-
-    background: #710e10;
-    background: -webkit-radial-gradient(circle, #710e10 0%, #131335 100%);
-    background: radial-gradient(circle, #710e10 0%, #131335 100%);*/
 
     background: #131335;
     background: -webkit-radial-gradient(circle, #0d0d1a 0%, #710e10 50%);
@@ -203,8 +186,52 @@ body {
     font-weight: bold;            /* negrita */
 }
 
-/*#logo-equipo {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}*/
+/*Es una prueba*/
+.pilot-card {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  background: var(--colorCard);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.card-content {
+  padding: 30px 20px 20px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  border-radius: 20px 20px 0 0;
+  margin-top: 180px; /* Espacio para la imagen */
+}
+
+.pilot-image-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-10%);
+  width: 200px;
+  height: 250px;
+  overflow: visible;
+  z-index: 3;
+}
+
+.pilot-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Ajusta estos valores según tu imagen */
+  object-position: 0 0px; /* Recorta la imagen para mostrar solo el torso */
+  transform: translateY(0px); /* Controla cuánto sobresale la cabeza */
+}
+
+/* Efectos hover opcionales */
+.pilot-card:hover .pilot-image {
+  transform: translateY(25px) scale(1.10);
+  transition: transform 0.3s ease;
+}

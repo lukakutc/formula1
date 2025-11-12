@@ -1,6 +1,6 @@
 const arrayEquipos = [
     {
-        id:"mercedes", 
+        id: "mercedes",
         nombre: "Mercedes-AMG Petronas Formula One Team",
         nombreCorto: "Mercedes",
         logo: "assets/img/equipos/mercedes/logo/logo-mercedes.png",
@@ -9,9 +9,15 @@ const arrayEquipos = [
         logoChico: "assets/img/equipos/mercedes/logo/imgi_43_2025mercedeslogowhite.webp",
         colorCard: "#00d7b6",
         imagenAuto: "assets/img/equipos/mercedes/auto/2025mercedescarright.webp",
+        nombrePilotoPrincipal: "George Russell",
+        imagenPilotoPrincipal: "assets/img/equipos/mercedes/piloto/George.png",
+        numeroPilotoPrincipal: "63",
+        nombrePilotoApoyo: "Kimi Antonelli",
+        imagenPilotoApoyo: "assets/img/equipos/mercedes/piloto/Kimi.png",
+        numeroPilotoApoyo: "12"
     },
     {
-        id:"red-bull",
+        id: "red-bull",
         nombre: "Oracle Red Bull Racing",
         nombreCorto: "Red Bull Racing",
         logo: "assets/img/equipos/redbullracing/logo/logo-red-bull.png",
@@ -19,7 +25,13 @@ const arrayEquipos = [
         colorFondo: "radial-gradient(circle, #0d0d1a 50%, #182e5fff 180%)",
         logoChico: "assets/img/equipos/redbullracing/logo/imgi_47_2025redbullracinglogowhite.webp",
         colorCard: "#012f73ff",
-        imagenAuto: "assets/img/equipos/redbullracing/auto/2025redbullracingcarright.webp"
+        imagenAuto: "assets/img/equipos/redbullracing/auto/2025redbullracingcarright.webp",
+        nombrePilotoPrincipal: "Max Verstappen",
+        imagenPilotoPrincipal: "assets/img/equipos/redbullracing/piloto/Max.png",
+        numeroPilotoPrincipal: "1",
+        nombrePilotoApoyo: "Yuki Tsunoda",
+        imagenPilotoApoyo: "assets/img/equipos/redbullracing/piloto/Yuki.png",
+        numeroPilotoApoyo: "22"
     },
     {
         id: "ferrari",
@@ -30,7 +42,13 @@ const arrayEquipos = [
         colorFondo: "radial-gradient(circle, #0d0d1a 50%, #710e10 180%)",
         logoChico: "assets/img/equipos/ferrari/logo/imgi_35_2025ferrarilogowhite.webp",
         colorCard: "#ed1131",
-        imagenAuto: "assets/img/equipos/ferrari/auto/2025ferraricarright.webp"
+        imagenAuto: "assets/img/equipos/ferrari/auto/2025ferraricarright.webp",
+        nombrePilotoPrincipal: "Charles Leclerc",
+        imagenPilotoPrincipal: "assets/img/equipos/ferrari/piloto/leclerc.png",
+        numeroPilotoPrincipal: "16",
+        nombrePilotoApoyo: "Lewis Hamilton",
+        imagenPilotoApoyo: "assets/img/equipos/ferrari/piloto/hamilton.png",
+        numeroPilotoApoyo: "44"
     },
     {
         id: "aston-martin",
@@ -39,12 +57,18 @@ const arrayEquipos = [
         logo: "assets/img/equipos/aston-martin/logo/pngegg.png",
         historia: "Aston Martin ha resurgido como constructor fuerte con gran respaldo financiero. En los últimos años ha mejorado su competitividad y está entre los equipos que aspiran a lo más alto.",
         colorFondo: "radial-gradient(circle, #0d0d1a 50%, #0d490dff 180%)",
+        imagenAuto: "assets/img/equipos/aston-martin/auto/2025astonmartincarright.webp",
         logoChico: "assets/img/equipos/aston-martin/logo/imgi_33_2025astonmartinlogowhite.webp",
         colorCard: "#229971",
-        imagenAuto: "assets/img/equipos/aston-martin/auto/2025astonmartincarright.webp"
+        nombrePilotoPrincipal: "Lance Stroll",
+        imagenPilotoPrincipal: "assets/img/equipos/aston-martin/piloto/stroll.png",
+        numeroPilotoPrincipal: "18",
+        nombrePilotoApoyo: "Fernando Alonzo",
+        imagenPilotoApoyo: "assets/img/equipos/aston-martin/piloto/alonso.png",
+        numeroPilotoApoyo: "14"
     },
     {
-        id: "alpine", 
+        id: "alpine",
         nombre: "BWT Alpine F1 Team",
         nombreCorto: "Alpine",
         logo: "assets/img/equipos/alpine/logo/logo-alpine.png",
@@ -52,7 +76,13 @@ const arrayEquipos = [
         colorFondo: "radial-gradient(circle, #0d0d1a 50%, #1e3f8cff 180%)",
         logoChico: "assets/img/equipos/alpine/logo/imgi_31_2025alpinelogowhite.webp",
         colorCard: "#00a1e8",
-        imagenAuto: "assets/img/equipos/alpine/auto/2025alpinecarright.webp"
+        imagenAuto: "assets/img/equipos/alpine/auto/2025alpinecarright.webp",
+        nombrePilotoPrincipal: "Pierre Gasly",
+        imagenPilotoPrincipal: "assets/img/equipos/alpine/piloto/gasly.png",
+        numeroPilotoPrincipal: "10",
+        nombrePilotoApoyo: "Franco Colapinto",
+        imagenPilotoApoyo: "assets/img/equipos/alpine/piloto/colapinto.png",
+        numeroPilotoApoyo: "43"
     },
     {
         id: "haas",
@@ -63,9 +93,15 @@ const arrayEquipos = [
         colorFondo: "radial-gradient(circle, #0d0d1a 50%, #b6b6b6ff 180%)",
         logoChico: "assets/img/equipos/haas/logo/imgi_37_2025haaslogowhite.webp",
         colorCard: "#9c9fa2",
-        imagenAuto: "assets/img/equipos/haas/auto/2025haascarright.webp"
+        imagenAuto: "assets/img/equipos/haas/auto/2025haascarright.webp",
+        nombrePilotoPrincipal: "Esteban Ocon",
+        imagenPilotoPrincipal: "assets/img/equipos/haas/piloto/ocon.png",
+        numeroPilotoPrincipal: "31",
+        nombrePilotoApoyo: "Oliver Bearman",
+        imagenPilotoApoyo: "assets/img/equipos/haas/piloto/bearman.png",
+        numeroPilotoApoyo: "87"
     },
-     {
+    {
         id: "williams",
         nombre: "Williams Racing",
         nombreCorto: "Williams",
@@ -74,7 +110,13 @@ const arrayEquipos = [
         colorFondo: "radial-gradient(circle, #0d0d1a 50%, #5d8be0ff 180%)",
         logoChico: "assets/img/equipos/williams/logo/imgi_49_2025williamslogowhite.webp",
         colorCard: "#1868db",
-        imagenAuto: "assets/img/equipos/williams/auto/2025williamscarright.webp"
+        imagenAuto: "assets/img/equipos/williams/auto/2025williamscarright.webp",
+        nombrePilotoPrincipal: "Alexander Albon",
+        imagenPilotoPrincipal: "assets/img/equipos/williams/piloto/albon.png",
+        numeroPilotoPrincipal: "23",
+        nombrePilotoApoyo: "Carlos Sainz",
+        imagenPilotoApoyo: "assets/img/equipos/williams/piloto/sainz.png",
+        numeroPilotoApoyo: "55"
     },
     {
         id: "racing-bulls",
@@ -85,7 +127,13 @@ const arrayEquipos = [
         colorFondo: "radial-gradient(circle, #0d0d1a 50%, #425fa7ff 180%)",
         logoChico: "assets/img/equipos/racingbulls/logo/imgi_45_2025racingbullslogowhite.webp",
         colorCard: "#6c98ff",
-        imagenAuto: "assets/img/equipos/racingbulls/auto/2025racingbullscarright.webp"
+        imagenAuto: "assets/img/equipos/racingbulls/auto/2025racingbullscarright.webp",
+        nombrePilotoPrincipal: "Liam Lawson",
+        imagenPilotoPrincipal: "assets/img/equipos/racingbulls/piloto/lawson.png",
+        numeroPilotoPrincipal: "30",
+        nombrePilotoApoyo: "Isack Hadjar",
+        imagenPilotoApoyo: "assets/img/equipos/racingbulls/piloto/hadjar.png",
+        numeroPilotoApoyo: "6"
     },
     {
         id: "kick-sauber",
@@ -96,34 +144,47 @@ const arrayEquipos = [
         colorFondo: "radial-gradient(circle, #0d0d1a 50%, #52E252 180%)",
         logoChico: "assets/img/equipos/kicksauber/logo/imgi_39_2025kicksauberlogowhite.webp",
         colorCard: "#01c00e",
-        imagenAuto: "assets/img/equipos/kicksauber/auto/2025kicksaubercarright.webp"
-    },{
-           id:"mclaren",
-           nombre: "McLaren Formula 1 Team",
-           logo: "assets/img/equipos/mclaren/logo/logo-mclaren.png",
-           historia: "McLaren es uno de los grandes históricos del automovilismo británico. Ha tenido épocas de gloria con múltiples campeonatos, y recientemente está intentando volver al podio con jóvenes promesas y buen rendimiento.",
-           colorFondo: "radial-gradient(circle, #0d0d1a 50%, #ff8700ff 180%)",
-           logoChico: "assets/img/equipos/mclaren/logo/imgi_41_2025mclarenlogowhite.webp",
-           nombreCorto: "McLaren",
-           colorCard: "#f47600",
-           imagenAuto: "assets/img/equipos/mclaren/auto/2025mclarencarright.webp"
+        imagenAuto: "assets/img/equipos/kicksauber/auto/2025kicksaubercarright.webp",
+        nombrePilotoPrincipal: "Nico Hulkenberg",
+        imagenPilotoPrincipal: "assets/img/equipos/kicksauber/piloto/hulkenberg.png",
+        numeroPilotoPrincipal: "27",
+        nombrePilotoApoyo: "Gabriel Bortoleto",
+        imagenPilotoApoyo: "assets/img/equipos/kicksauber/piloto/bortoleto.png",
+        numeroPilotoApoyo: "5"
+    },
+    {
+        id: "mclaren",
+        nombre: "McLaren Formula 1 Team",
+        logo: "assets/img/equipos/mclaren/logo/logo-mclaren.png",
+        historia: "McLaren es uno de los grandes históricos del automovilismo británico. Ha tenido épocas de gloria con múltiples campeonatos, y recientemente está intentando volver al podio con jóvenes promesas y buen rendimiento.",
+        colorFondo: "radial-gradient(circle, #0d0d1a 50%, #ff8700ff 180%)",
+        logoChico: "assets/img/equipos/mclaren/logo/imgi_41_2025mclarenlogowhite.webp",
+        nombreCorto: "McLaren",
+        colorCard: "#f47600",
+        imagenAuto: "assets/img/equipos/mclaren/auto/2025mclarencarright.webp",
+        nombrePilotoPrincipal: "Oscar Piastri",
+        imagenPilotoPrincipal: "assets/img/equipos/mclaren/piloto/piastri.png",
+        numeroPilotoPrincipal: "81",
+        nombrePilotoApoyo: "Lando Norris",
+        imagenPilotoApoyo: "assets/img/equipos/mclaren/piloto/norris.png",
+        numeroPilotoApoyo: "4"
        },
-    ];
-    
+];
 
-function paginaActual(){
-    
+
+function paginaActual() {
+
     let pagina = document.getElementsByClassName("pagina-equipos2");
     console.log("antes del if")
-    if(pagina[0]){
+    if (pagina[0]) {
         console.log(pagina[0]);
         cargarEquipos();
-    }else{
+    } else {
         pagina = document.getElementsByClassName("pagina-perfilEscuderia");
         console.log(pagina[0])
         cargarPerfil();
     }
-    
+
 }
 paginaActual();
 
@@ -157,14 +218,14 @@ function cargarPerfil() {
     const params = new URLSearchParams(window.location.search);
     const teamId = params.get("team");
     console.log(teamId);
-    let  i = 0;
-    let  encontrado = false;
+    let i = 0;
+    let encontrado = false;
     let equipo;
-    while(arrayEquipos.length>i && !encontrado){
-        if(arrayEquipos[i].id==teamId){
+    while (arrayEquipos.length > i && !encontrado) {
+        if (arrayEquipos[i].id == teamId) {
             encontrado = true;
             equipo = arrayEquipos[i];
-        }else{
+        } else {
             i++;
         }
     }
