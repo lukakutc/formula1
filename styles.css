@@ -186,71 +186,19 @@ body {
     font-weight: bold;            /* negrita */
 }
 
-/*Es una prueba*/
-
-/*
-.pilot-card {
-  position: relative;
-  width: 600px;
-  height: 200px;
-  background: var(--team-color);
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  margin: 50px auto;
-}
-
-.card-content {
-  padding: 30px 20px 20px;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  border-radius: 20px 20px 0 0;
-  margin-top: 180px;  /* Espacio para la imagen */
-/*}
-
-.pilot-image-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-10%);
-  width: 200px;
-  height: 250px;
-  overflow: visible;
-  z-index: 3;
-}
-
-.pilot-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  /* Ajusta estos valores según tu imagen */
-  /*object-position: 0 0px; /* Recorta la imagen para mostrar solo el torso */
-  /*transform: translateY(0px); /* Controla cuánto sobresale la cabeza */
-/*}*/
-
-/* Efectos hover opcionales */
-/*.pilot-card:hover .pilot-image {
-  transform: translateY(25px) scale(1.10);
-  transition: transform 0.3s ease;
-}*/
-
 
 /* Contenedor principal donde se mostrarán las tarjetas de pilotos */
 .pilots-container {
     display: flex;
-    gap: 20px; /* Espacio entre tarjetas */
+    gap: 50px; /* Espacio entre tarjetas */
     flex-wrap: wrap; /* Para que se ajusten si no caben en una línea */
-    justify-content: flex-start;
+    justify-content: center; /*Alinea las tarjetas*/
     padding: 20px;
 }
 
 /* Tarjeta de piloto */
 .pilot-card {
-    width: 350px; /* Ancho fijo o ajustable según necesidad */
+    width: 600px; /* Ancho fijo o ajustable según necesidad */
     height: 200px; /* Altura fija para mantener proporción */
     background-color: var(--team-color);
     border-radius: 12px;
@@ -273,12 +221,16 @@ body {
 }
 
 .pilot-info h3 {
+    color: white;
+    font-family: "Audiowide", sans-serif;
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 .pilot-info .pilot-number {
+    color: white;
+    font-family: "Audiowide", sans-serif;
     margin: 5px 0 0 0;
     font-size: 1rem;
     font-weight: 500;
@@ -289,7 +241,7 @@ body {
     position: absolute;
     right: 20px; /* Margen desde el borde derecho */
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(25%);
     width: 180px; /* Ancho de la imagen */
     height: 100%;
     display: flex;
@@ -299,10 +251,13 @@ body {
 
 /* Imagen del piloto (desde torso hasta cabeza) */
 .pilot-image {
-    max-height: 160px; /* Limita la altura para que no ocupe todo el espacio */
+    max-height: 460px; /* Limita la altura para que no ocupe todo el espacio */
     max-width: 100%;
-    object-fit: contain; /* Mantiene proporción sin distorsionar */
+    object-fit: cover; /* Mantiene proporción sin distorsionar */
     object-position: bottom center; /* Alinea la parte inferior de la imagen (torso) al centro */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pilot-card:hover .pilot-image {
+  transform: translateY(5px) scale(1.10);
+  transition: transform 0.3s ease;
 }
