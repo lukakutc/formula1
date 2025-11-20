@@ -187,11 +187,13 @@ body {
 }
 
 /*Es una prueba*/
+
+/*
 .pilot-card {
   position: relative;
   width: 600px;
   height: 200px;
-  background: var(--colorCard);
+  background: var(--team-color);
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -207,8 +209,8 @@ body {
   right: 0;
   z-index: 2;
   border-radius: 20px 20px 0 0;
-  margin-top: 180px; /* Espacio para la imagen */
-}
+  margin-top: 180px;  /* Espacio para la imagen */
+/*}
 
 .pilot-image-container {
   position: absolute;
@@ -226,12 +228,81 @@ body {
   height: auto;
   object-fit: cover;
   /* Ajusta estos valores según tu imagen */
-  object-position: 0 0px; /* Recorta la imagen para mostrar solo el torso */
-  transform: translateY(0px); /* Controla cuánto sobresale la cabeza */
-}
+  /*object-position: 0 0px; /* Recorta la imagen para mostrar solo el torso */
+  /*transform: translateY(0px); /* Controla cuánto sobresale la cabeza */
+/*}*/
 
 /* Efectos hover opcionales */
-.pilot-card:hover .pilot-image {
+/*.pilot-card:hover .pilot-image {
   transform: translateY(25px) scale(1.10);
   transition: transform 0.3s ease;
+}*/
+
+
+/* Contenedor principal donde se mostrarán las tarjetas de pilotos */
+.pilots-container {
+    display: flex;
+    gap: 20px; /* Espacio entre tarjetas */
+    flex-wrap: wrap; /* Para que se ajusten si no caben en una línea */
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* Tarjeta de piloto */
+.pilot-card {
+    width: 350px; /* Ancho fijo o ajustable según necesidad */
+    height: 200px; /* Altura fija para mantener proporción */
+    background-color: var(--team-color);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Información del piloto (nombre y número) */
+.pilot-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-align: left;
+    z-index: 2;
+}
+
+.pilot-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pilot-info .pilot-number {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Contenedor de la imagen del piloto */
+.pilot-image-container {
+    position: absolute;
+    right: 20px; /* Margen desde el borde derecho */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 180px; /* Ancho de la imagen */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagen del piloto (desde torso hasta cabeza) */
+.pilot-image {
+    max-height: 160px; /* Limita la altura para que no ocupe todo el espacio */
+    max-width: 100%;
+    object-fit: contain; /* Mantiene proporción sin distorsionar */
+    object-position: bottom center; /* Alinea la parte inferior de la imagen (torso) al centro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
